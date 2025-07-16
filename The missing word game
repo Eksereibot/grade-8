@@ -1,0 +1,38 @@
+#The Missing Word game 
+import random
+import time 
+
+choices = ["water", "cake","burger"]
+print("Welcome to the missing word game food edition\n")
+
+#Sub program for question
+def question():
+    answer = input("\nWhich is the missing word?\nwater\ncake\nburger\n")
+    return answer
+    
+#This is question 1
+questionOne = "Im thirsty, _____ refreshing"
+print(questionOne)
+answer = question()
+if answer == choices[0]:
+    print("Amazing!")
+else:
+    print("Wrong,try again.")
+    time.sleep(2)
+#This is question 2
+questionTwo = "Its my birthday, I want _____ "
+print(questionTwo)
+answer = question()
+if answer == choices[1]:
+    print("Awesome!")
+else:
+    print("Wrong,try again.")
+    time.sleep(2)
+ #This is question 3
+questionThree = "Lets go to burger queen, I want _____ "
+print(questionThree)
+answer = question()
+if answer == choices[2]:
+    print("Fantastic!")
+else:
+    print("Wrong,try again.")   
