@@ -1,0 +1,16 @@
+#Chatbot
+import random
+import time
+chatColours = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink"]
+print("Welome to Chatbot")
+name = input("What's your name?")
+print("Hi there", name, "it's great to meet you.")
+colour = input("What is your favourite colour?")
+time.sleep(2)
+print("That is such a beautiful colour, I like", random.choice(chatColours))
+day = input("Have you had a nice day?")
+if day == "yes":
+    print("Amazing to hear, me too.")
+else:
+    print("Oh.I hope tomorrow is better.")
+print("I really enjoyed talking with you have a nice day.")
